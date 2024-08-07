@@ -1,6 +1,7 @@
 [![Build Status](https://img.shields.io/travis/seek-oss/css-modules-typescript-loader/master.svg?style=flat-square)](http://travis-ci.org/seek-oss/css-modules-typescript-loader) [![npm](https://img.shields.io/npm/v/css-modules-typescript-loader.svg?style=flat-square)](https://www.npmjs.com/package/css-modules-typescript-loader) [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat-square)](https://github.com/semantic-release/semantic-release) [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square)](http://commitizen.github.io/cz-cli/)
 
 # css-modules-typescript-loader
+> fix working with css-loader V7
 
 [Webpack](https://webpack.js.org/) loader to create [TypeScript](https://www.typescriptlang.org/) declarations for [CSS Modules](https://github.com/css-modules/css-modules).
 
@@ -29,14 +30,14 @@ module.exports = {
           {
             loader: 'css-loader',
             options: {
-              modules: true
-            }
-          }
-        ]
-      }
-    ]
-  }
-};
+              modules: true,
+            },
+          },
+        ],
+      },
+    ],
+  },
+}
 ```
 
 ### Verify Mode
